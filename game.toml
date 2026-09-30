@@ -5,6 +5,8 @@ id = "SCUS-94666"
 players = 1
 exe = "disc/SCUS_946.66"
 disc = "disc/C-12 - Final Resistance (USA).cue"
+discs = ["disc/C-12 - Final Resistance (USA).cue"]
+disc_serials = ["SCUS-94666"]
 load_address = "0x80010000"
 entry_pc = "0x800A8454"
 text_size = "0x000E0800"
@@ -12,17 +14,20 @@ stack_base = "0x801FFFF0"
 
 [prepare_disc]
 out_dir = "disc"
-bin_name = "C-12 - Final Resistance (USA).bin"
+bin_name = "C-12 - Final Resistance (USA) (Track 1).bin"
 cue_name = "C-12 - Final Resistance (USA).cue"
 boot_exe = "SCUS_946.66"
-known_sizes = [486405360]
+known_sizes = [453416208, 486405360]
 known_md5 = [
+  "b6921735ee700c8bfe6c59f7759377ab",
   "e716663982b12dd5175d0092390d6243",
 ]
 known_sha1 = [
+  "e0d14aedc5df49896b750c3236fb11cf7565ef9b",
   "fdf3a87c39cbb39a9f502f8fbf0d0de864cdf74e",
 ]
 known_crc32 = [
+  "c6ef3d1f",
   "3d8d0b4e",
 ]
 
