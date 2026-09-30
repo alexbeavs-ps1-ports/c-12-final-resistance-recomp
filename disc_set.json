@@ -1,0 +1,18 @@
+{
+  "disc_count": 1,
+  "verdict": "single",
+  "differing_program_fields": [],
+  "warnings": [],
+  "discs": [
+    {
+      "index": 1,
+      "cue_name": "C-12 - Final Resistance (USA).cue",
+      "cue_path": "disc/C-12 - Final Resistance (USA).cue",
+      "serial": "SCUS-94666",
+      "boot_exe": "SCUS_946.66",
+      "entry_pc": "0x800A8454",
+      "track_count": 2,
+      "required_disc_fp": "351e30f7ed4d3dbedf3b022bd54164afa55f2a3b3d8b6db368c218d400fb84a5"
+    }
+  ]
+}

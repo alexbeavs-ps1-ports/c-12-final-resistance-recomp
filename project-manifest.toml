@@ -1,0 +1,27 @@
+[project]
+title = "C-12: Final Resistance"
+region = "USA"
+track = "recompilation"
+status = "source_prepared_unqualified"
+
+[retail_identity]
+disc_count = 1
+serials = ["SCUS-94666"]
+executable_paths = ["SCUS_946.66"]
+executable_sha256 = "0b93d073ecc211a51431ee8e3eaf8e72f3aa33e6bc0b985a408c0f37a4cc9c87"
+load_address = "0x80010000"
+entry_point = "0x800A8454"
+
+[bios]
+profile = "SCPH1001"
+sha256 = "71af94d1e47a68c11e8fdb9f8368040601514a42a5a399cda48c7d3bff1e99d3"
+
+[framework]
+name = "psxrecomp"
+qualification = "pending T168 and shared canaries"
+template_commit = "f4751d005ee69b26a69f8fe0d7a58807f16b46c1"
+
+[release]
+target_version = "v0.4.0"
+private_only = true
+profile_status = "CI training pending"

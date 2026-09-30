@@ -1,0 +1,55 @@
+
+[game]
+name = "C-12: Final Resistance"
+id = "SCUS-94666"
+players = 1
+exe = "disc/SCUS_946.66"
+disc = "disc/C-12 - Final Resistance (USA).cue"
+load_address = "0x80010000"
+entry_pc = "0x800A8454"
+text_size = "0x000E0800"
+stack_base = "0x801FFFF0"
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "C-12 - Final Resistance (USA).bin"
+cue_name = "C-12 - Final Resistance (USA).cue"
+boot_exe = "SCUS_946.66"
+known_sizes = [486405360]
+known_md5 = [
+  "e716663982b12dd5175d0092390d6243",
+]
+known_sha1 = [
+  "fdf3a87c39cbb39a9f502f8fbf0d0de864cdf74e",
+]
+known_crc32 = [
+  "3d8d0b4e",
+]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH1001.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+openbios = false
+bios_hle = false
+window_title = "C-12: Final Resistance Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+[netplay]
+require_cue = true
+required_tracks = 2
+required_disc_fp = "351e30f7ed4d3dbedf3b022bd54164afa55f2a3b3d8b6db368c218d400fb84a5"
+
+[pgo]
+enabled = false
