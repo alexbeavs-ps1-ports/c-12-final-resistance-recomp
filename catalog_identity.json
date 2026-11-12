@@ -1,0 +1,46 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "C-12: Final Resistance",
+    "id": "SCUS-94666",
+    "boot_exe": "SCUS_946.66"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "USA",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "C-12 - Final Resistance (USA).cue",
+    "bin_name": "C-12 - Final Resistance (USA).bin",
+    "track_counts": [
+      2
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 486405360,
+      "md5": "e716663982b12dd5175d0092390d6243",
+      "sha1": "fdf3a87c39cbb39a9f502f8fbf0d0de864cdf74e",
+      "crc32": "3d8d0b4e"
+    },
+    "disc_fp": "351e30f7ed4d3dbedf3b022bd54164afa55f2a3b3d8b6db368c218d400fb84a5"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x800A8454",
+    "text_size": "0x000E0800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 1294,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
